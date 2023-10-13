@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride Compare</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #444444;
+      color: white;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    footer {
+      background-color: #1172c2;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 10px;
+    }
+    .animated-btn {
+      background-color: rgb(6, 230, 43);
+      color: rgb(251, 251, 251);
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    /* Video and Image section */
+    .video-section,
+    .image-section {
+      margin-bottom: 20px;
+    }
+
+    .video-container,
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      max-width: 100%;
+    }
+
+    .video-container video,
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+    
+    /* Comparison input section */
+    .comparison-input {
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Feature chart section */
+    .feature-chart {
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    
+    /* Emojis */
+    .emoji {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ride Compare</h1>
+  </header>r-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">FareWise</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+  <nav class="navbar navbar-expand-lg navba
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Updates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#updates">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#register">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="video-section">
+      <div class="video-container">
+        <video controls>
+          <source src="video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="comparison-input">
+      <h2>Compare Fares</h2>
+      <form>
+        <label for="from-location">From Location:</label>
+        <input type="text" id="from-location" name="from-location" placeholder="Enter starting location" required>
+
+        <label for="to-location">To Location:</label>
+        <input type="text" id="to-location" name="to-location" placeholder="Enter destination location" required>
+
+        <!-- Add an <a> element to link the page -->
+        <a href="compare.html" id="check-btn" class="btn btn-primary" disabled>Check</a>
+      </form>
+    </div>
+
+    <div class="image-section">
+      <div class="image-container">
+        <img src="Lamplight Mobile Systems.png" alt="A beautiful design from Canva">
+      </div>
+    </div>
+
+    <div class="feature-chart">
+      <h2>Features</h2>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Feature</th>
+            <th scope="col">Benefits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="emoji">🚀</span> Real-time Comparisons</td>
+            <td>Instantly compare fares of different rides</td>
+          </tr>
+          <tr>
+            <td><span class="emoji">🪄</span> User-Friendly</td>
+            <td>Easy-to-use interface for quick selection</td>
+          </tr>
+          <tr>
+            <td><span class="emoji">🧨</span> Custom Preferences</td>
+            <td>Set preferences for ride type and budget</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 All in one Ride Comparison. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Get references to the input fields and the "Check" button
+    const fromLocationInput = document.getElementById('from-location');
+    const toLocationInput = document.getElementById('to-location');
+    const checkButton = document.getElementById('check-btn');
+
+    // Function to enable or disable the button based on input values
+    function updateButtonState() {
+      if (fromLocationInput.value && toLocationInput.value) {
+        checkButton.removeAttribute('disabled');
+      } else {
+        checkButton.setAttribute('disabled', 'disabled');
+      }
+    }
+
+    // Add event listeners to input fields to update button state
+    fromLocationInput.addEventListener('input', updateButtonState);
+    toLocationInput.addEventListener('input', updateButtonState);
+  </script>
+</body>
+</html>

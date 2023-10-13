@@ -1,0 +1,21 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .card-header {
+    font-weight: bold;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Add your additional styling here */
+  .login-button {
+    position: absolute;
+    top: 10px; /* Adjust the top value to position the button */
+    right: 10px; /* Adjust the right value to position the button */
+  }
